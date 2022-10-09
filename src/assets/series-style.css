@@ -1,0 +1,386 @@
+#root {
+    max-width: 85rem;
+    margin: auto;
+    padding: 1rem;
+    font-family: Tahoma;
+    color: rgba(0, 0, 0, .7) !important;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3 {
+    color: #000 !important;
+}
+
+.tabulator-table {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.tabulator-row {
+    display: flex;
+    /* background-color: #babcb217; */
+    border-radius: 25px;
+    padding: 1rem !important;
+    background-color: #FBFBFB;
+    box-shadow: 1px 5px 13px -1px rgba(198, 198, 198, 0.48);
+    border-radius: 25px;
+    width: 28%;
+    /* margin-right: 1.5rem; */
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+
+}
+
+.tabulator-row:last-child {
+    margin-right: 0;
+}
+
+.tabulator-row .sr-wrapper {
+    display: flex;
+}
+
+.tabulator-row .sr-wrapper .img-cont {
+    margin-right: 1.5rem;
+}
+
+.img-tg {
+    border-radius: 20px;
+    box-shadow: 4px 5px 12px -1px rgba(0, 0, 0, 0.41);
+    -webkit-box-shadow: 4px 5px 12px -1px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 4px 5px 12px -1px rgba(0, 0, 0, 0.41);
+}
+
+.sr-loading {
+    height: 7rem;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+.sr-err {
+    padding: 1rem;
+    background-color: rgba(223, 100, 100, 0.47);
+    text-align: center;
+}
+
+.sr-text-r {
+    text-align: right;
+}
+
+.sr-head {
+    padding: 1rem;
+    background: #c1cc883d;
+    min-width: 325px;
+}
+
+.sr-head a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.sr-srch-inp {
+    box-shadow: 4px 5px 4px -3px rgba(202, 202, 202, 0.77);
+    width: 45%;
+    padding: 1rem;
+    border: 1px solid #c1c1c129;
+}
+
+.sr-btn-srch {
+    box-shadow: -3px 5px 4px -3px rgba(202, 202, 202, 0.77);
+    padding: 1rem;
+    background-color: #c1cc88;
+    border: 1px solid #c1c1c129;
+    cursor: pointer;
+}
+
+.sr-srch-inp:focus {
+    outline: none;
+}
+
+.sr-thumbn-img {
+    height: 192px;
+    width: 136px;
+    border-radius: 0;
+}
+
+.pad-r-1r {
+    padding-right: 1rem;
+}
+
+.pad-3r {
+    padding: 3rem;
+}
+
+.pad-1r {
+    padding: 1rem;
+}
+
+.sr-space-tb-1 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.sr-flex {
+    display: flex;
+}
+
+.sr-dt-summ,
+.sr-dt-info {
+    font-size: 11pt;
+}
+
+.sr-dt-info label {
+    font-weight: bold;
+}
+
+.sr-dt-info li {
+    border-bottom: 1px solid rgba(183, 183, 183, 0.39);
+    margin-bottom: 1rem;
+}
+
+.sr-dt-summ {
+    width: 57%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.sr-dt-info {
+    margin-bottom: 2rem;
+}
+
+.sr-dt-img {
+    margin-bottom: 2rem;
+}
+
+.sr-justify-space-bet {
+    justify-content: space-between;
+}
+
+.sr-bold {
+    font-weight: bold;
+}
+
+.sr-dt-info ul,
+.sr-ul-ls {
+    padding-left: 0;
+}
+
+.sr-ul-ls li {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(183, 183, 183, 0.39);
+}
+
+.sr-dt-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sr-cast-wrapper {
+    width: 100%;
+    /* margin: auto; */
+    flex-wrap: wrap;
+}
+
+.sr-cs-desc {
+    width: 60%;
+    min-width: 135px;
+    margin-right: 2rem;
+}
+
+.sr-cs-desc div {
+    width: 100%;
+}
+
+.sr-cs-desc .sr-rl-name,
+.sr-cs-desc .sr-chr-name {
+    width: 100%;
+    /* padding: 1rem 0 0 2rem; */
+    /* float: left; */
+    word-wrap: break-word;
+}
+
+.sr-cs-desc .sr-chr-name {
+    font-size: 11pt;
+}
+
+.sr-cs-thumbn {
+    width: 49%;
+    margin-bottom: 2rem;
+}
+
+.cs-thumn-cont {
+    width: 25%;
+    min-width: 136px;
+    margin-right: 2rem;
+}
+
+.sr-clear-ln {
+    clear: both;
+}
+
+.sr-w-full {
+    width: 100%;
+}
+
+.sr-cs-thumbn-wrap {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+}
+
+@media only screen and (max-width: 1080px) {
+    .tabulator-row {
+        width: 43%;
+        min-width: 335px;
+    }
+
+    .sr-srch-inp {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .tabulator-row {
+        width: 40%;
+        min-width: 318.4px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .tabulator-row {
+        width: 30%;
+        min-width: 318.4px;
+        margin-right: 0;
+    }
+
+    .tabulator-row .sr-wrapper {
+        display: block;
+        margin: auto;
+    }
+
+    .sr-wrapper .img-cont {
+        margin: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .tabulator-row {
+        width: 28%;
+        min-width: 290px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .tabulator-row {
+        width: 42%;
+        min-width: 227px;
+    }
+}
+
+@media only screen and (max-width: 624px) {
+    .tabulator-row {
+        width: 41%;
+        min-width: 238px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .tabulator-row {
+        width: 41%;
+        min-width: 231px;
+    }
+}
+
+
+@media only screen and (max-width: 590px) {
+    .tabulator-row .sr-wrapper {
+        display: flex !important;
+    }
+
+    .tabulator-row {
+        width: 100%;
+        min-width: 235px;
+    }
+
+    .sr-wrapper .img-tg {
+        margin-right: 2rem !important;
+    }
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    .tabulator-row {
+        width: 100%;
+        min-width: 235px;
+        margin-right: 0;
+    }
+
+    .tabulator-row .sr-wrapper {
+        display: block !important;
+        margin: auto;
+    }
+
+    .sr-wrapper .img-tg {
+        margin: 0 !important;
+    }
+}
+
+/* Details View */
+
+@media only screen and (max-width: 900px) {
+    .sr-dt-wrapper {
+        display: block !important;
+    }
+
+    .sr-dt-img {
+        width: 27%;
+        float: left;
+    }
+
+    .sr-dt-summ {
+        width: 65% !important;
+        float: right !important;
+    }
+
+    .sr-dt-info {
+        clear: both;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .sr-dt-summ {
+        width: 62% !important;
+    }
+}
+
+/* Cast View */
+@media only screen and (max-width: 730px) {
+    .sr-dt-summ {
+        width: 60% !important;
+    }
+
+    .cs-thumn-cont {}
+}
+
+@media only screen and (max-width: 715px) {
+    .sr-dt-summ {
+        width: 100% !important;
+        clear: both;
+        float: left !important;
+        padding: 0;
+    }
+
+    .sr-cs-thumbn {
+        width: 100%;
+    }
+}
