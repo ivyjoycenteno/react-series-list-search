@@ -24,7 +24,7 @@ npm run start
 
 ### Todo's:
 - Pagination or progressive loading on the list.
-    - Had run out of time exploring and researching on how to coordinate/sync pagination in the API and set pagination size to limit the number of records per page, to lazy-load data and optimize the performance. Currently, the API is returning 240 records per page.
+    - If I had more time I'd spend it exploring and researching more on how to coordinate/sync pagination in the API and set pagination size to limit the number of records per page, to lazy-load data and optimize the performance. Currently, the API is returning 240 records per page, per request, thus, on page load, those huge number of records had to be loaded. Needed more time to check if there are tweaks for the API to return just the necessary number of records per page, should depend on the client's request set parameter such as the page size. That would be nice to have the page loads only the necessary data needed.
 - Create a favorite shows list.
 
 ### For improvement:
@@ -33,6 +33,7 @@ npm run start
 - Improve look and feel.
 - Change alerts to use modals for notifications and make a separate component for handling messages such as errors, success messages, etc..
 - Change react hook store context to use redux-saga instead for handling state management or persistence for a more complex, future features.
+- It would be nice to have implemented `GraphQL` to cache API data response and would not much depend on creating and consuming store objects in the app.
 
 
 App Overview:
